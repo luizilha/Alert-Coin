@@ -14,6 +14,7 @@
 		72A1102F1B69051100FF2C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A1102E1B69051100FF2C19 /* Images.xcassets */; };
 		72A110321B69051100FF2C19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A110301B69051100FF2C19 /* LaunchScreen.xib */; };
 		72A1103E1B69051100FF2C19 /* Alert_CoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1103D1B69051100FF2C19 /* Alert_CoinTests.swift */; };
+		72E00E8E1B880F9300CE2C8E /* CoinValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E00E8D1B880F9300CE2C8E /* CoinValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		72A110371B69051100FF2C19 /* Alert CoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alert CoinTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A1103C1B69051100FF2C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A1103D1B69051100FF2C19 /* Alert_CoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert_CoinTests.swift; sourceTree = "<group>"; };
+		72E00E8D1B880F9300CE2C8E /* CoinValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				72A110271B69051100FF2C19 /* AppDelegate.swift */,
 				72A110291B69051100FF2C19 /* ViewController.swift */,
 				7244A0DB1B692CE400227E8F /* MainCell.swift */,
+				72E00E8D1B880F9300CE2C8E /* CoinValues.swift */,
 				72A1102B1B69051100FF2C19 /* Main.storyboard */,
 				72A1102E1B69051100FF2C19 /* Images.xcassets */,
 				72A110301B69051100FF2C19 /* LaunchScreen.xib */,
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E00E8E1B880F9300CE2C8E /* CoinValues.swift in Sources */,
 				72A1102A1B69051100FF2C19 /* ViewController.swift in Sources */,
 				72A110281B69051100FF2C19 /* AppDelegate.swift in Sources */,
 				7244A0DC1B692CE400227E8F /* MainCell.swift in Sources */,
