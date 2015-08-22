@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0zd-Xf-Od9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Alert Coin-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alert_Coin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,105 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-be-TqN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" rowHeight="90" id="nDt-RV-KRm" customClass="MainCell" customModule="Alert_Coin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nDt-RV-KRm" id="eKd-Gb-pKi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolar americano (USD)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-OF-cRi">
+                                                    <rect key="frame" x="8" y="8" width="175" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="FH5-nn-WER"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 2.2323" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJx-RO-y5y">
+                                                    <rect key="frame" x="8" y="42" width="133" height="39"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="39" id="KJp-fm-a99"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 0.20%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Me-OP-KYK">
+                                                    <rect key="frame" x="267.5" y="57.5" width="65.5" height="20.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7Me-OP-KYK" secondAttribute="bottom" constant="3.5" id="3eo-vQ-LqA"/>
+                                                <constraint firstItem="kgN-OF-cRi" firstAttribute="top" secondItem="eKd-Gb-pKi" secondAttribute="topMargin" id="6rK-9j-vTi"/>
+                                                <constraint firstItem="kgN-OF-cRi" firstAttribute="leading" secondItem="eKd-Gb-pKi" secondAttribute="leadingMargin" id="D5c-lV-8DB"/>
+                                                <constraint firstItem="YJx-RO-y5y" firstAttribute="top" secondItem="kgN-OF-cRi" secondAttribute="bottom" constant="13" id="JUF-7O-0qq"/>
+                                                <constraint firstItem="7Me-OP-KYK" firstAttribute="leading" secondItem="YJx-RO-y5y" secondAttribute="trailing" priority="250" constant="85" id="PDL-iH-mFU"/>
+                                                <constraint firstAttribute="centerX" secondItem="7Me-OP-KYK" secondAttribute="centerX" id="Z6h-0v-3p5"/>
+                                                <constraint firstItem="YJx-RO-y5y" firstAttribute="leading" secondItem="eKd-Gb-pKi" secondAttribute="leadingMargin" id="eoh-Eu-j5Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YJx-RO-y5y" secondAttribute="bottom" constant="0.5" id="pba-de-Ngm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="coinName" destination="kgN-OF-cRi" id="V0M-U5-dfz"/>
+                                            <outlet property="coinValue" destination="YJx-RO-y5y" id="SJm-EM-SGF"/>
+                                            <outlet property="variation" destination="7Me-OP-KYK" id="61j-B7-k7O"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="e17-TV-RUW"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LQf-Zh-IcI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Znf-be-TqN" secondAttribute="trailing" constant="-16" id="CvZ-W9-aRQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Znf-be-TqN" secondAttribute="bottom" id="RnU-jD-X4E"/>
+                            <constraint firstItem="Znf-be-TqN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="aOD-ZR-APK"/>
+                            <constraint firstItem="Znf-be-TqN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ejK-9E-BjS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Alert Coin" id="rXT-SS-TRb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1075" y="1000"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Iq-Ee-uqY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0zd-Xf-Od9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="erI-ZU-EWL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="y6g-Kf-e5L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X33-6w-zW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="1000"/>
         </scene>
     </scenes>
 </document>

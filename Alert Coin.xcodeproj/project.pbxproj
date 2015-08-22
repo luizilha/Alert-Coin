@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7244A0DC1B692CE400227E8F /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244A0DB1B692CE400227E8F /* MainCell.swift */; };
 		72A110281B69051100FF2C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A110271B69051100FF2C19 /* AppDelegate.swift */; };
 		72A1102A1B69051100FF2C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A110291B69051100FF2C19 /* ViewController.swift */; };
 		72A1102D1B69051100FF2C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1102B1B69051100FF2C19 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7244A0DB1B692CE400227E8F /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		72A110221B69051100FF2C19 /* Alert Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alert Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A110261B69051100FF2C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A110271B69051100FF2C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				72A110271B69051100FF2C19 /* AppDelegate.swift */,
 				72A110291B69051100FF2C19 /* ViewController.swift */,
+				7244A0DB1B692CE400227E8F /* MainCell.swift */,
 				72A1102B1B69051100FF2C19 /* Main.storyboard */,
 				72A1102E1B69051100FF2C19 /* Images.xcassets */,
 				72A110301B69051100FF2C19 /* LaunchScreen.xib */,
@@ -156,6 +159,7 @@
 		72A1101A1B69051100FF2C19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Ilha;
 				TargetAttributes = {
@@ -214,6 +218,7 @@
 			files = (
 				72A1102A1B69051100FF2C19 /* ViewController.swift in Sources */,
 				72A110281B69051100FF2C19 /* AppDelegate.swift in Sources */,
+				7244A0DC1B692CE400227E8F /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +350,7 @@
 				INFOPLIST_FILE = "Alert Coin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -355,6 +361,7 @@
 				INFOPLIST_FILE = "Alert Coin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};
@@ -411,6 +418,7 @@
 				72A110431B69051100FF2C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A110441B69051100FF2C19 /* Build configuration list for PBXNativeTarget "Alert CoinTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +427,7 @@
 				72A110461B69051100FF2C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
