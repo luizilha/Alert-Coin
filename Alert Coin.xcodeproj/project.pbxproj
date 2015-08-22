@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7244A0DC1B692CE400227E8F /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7244A0DB1B692CE400227E8F /* MainCell.swift */; };
+		726F2C4E1B88140700C7EA2A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 726F2C4D1B88140700C7EA2A /* LICENSE */; };
 		72A110281B69051100FF2C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A110271B69051100FF2C19 /* AppDelegate.swift */; };
 		72A1102A1B69051100FF2C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A110291B69051100FF2C19 /* ViewController.swift */; };
 		72A1102D1B69051100FF2C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1102B1B69051100FF2C19 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		7244A0DB1B692CE400227E8F /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		726F2C4D1B88140700C7EA2A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = "Alert Coin/LICENSE"; sourceTree = "<group>"; };
 		72A110221B69051100FF2C19 /* Alert Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alert Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A110261B69051100FF2C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A110271B69051100FF2C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		72A110191B69051100FF2C19 = {
 			isa = PBXGroup;
 			children = (
+				726F2C4D1B88140700C7EA2A /* LICENSE */,
 				72A110241B69051100FF2C19 /* Alert Coin */,
 				72A1103A1B69051100FF2C19 /* Alert CoinTests */,
 				72A110231B69051100FF2C19 /* Products */,
@@ -201,6 +204,7 @@
 			files = (
 				72A1102D1B69051100FF2C19 /* Main.storyboard in Resources */,
 				72A110321B69051100FF2C19 /* LaunchScreen.xib in Resources */,
+				726F2C4E1B88140700C7EA2A /* LICENSE in Resources */,
 				72A1102F1B69051100FF2C19 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
